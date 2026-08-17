@@ -1,0 +1,32 @@
+# The private corpus and all raw captures must remain outside this repository.
+private/
+corpus/
+raw/
+captures/
+deliveries/
+
+# Capture and archive formats
+*.pcap
+*.pcapng
+*.btsnoop
+*.cfa
+*.zip
+*.7z
+*.rar
+*.tar
+*.tgz
+*.gz
+
+# Data exports and private analysis products
+*.log
+*.csv
+*.tsv
+*.xlsx
+*.jsonl
+*.sqlite
+*.db
+
+# Local state
+.DS_Store
+__pycache__/
+*.pyc

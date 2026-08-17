@@ -1,0 +1,89 @@
+name: Research or evaluation interest
+description: Describe a technical use case without posting raw or sensitive evidence.
+title: "[Research interest] "
+labels:
+  - research-interest
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your interest. Do not include raw captures, target identifiers, payloads, tokens, locations, or private source paths in this public form.
+
+  - type: dropdown
+    id: engagement
+    attributes:
+      label: Evaluation track
+      description: Which track is closest to your need?
+      options:
+        - Ten-case Deep Evidence Pilot
+        - Parser and Decoder Validation Pack
+        - Anomaly Evidence Dossier
+        - Private Corpus Query
+        - Custom research integration
+        - Not sure yet
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Technical problem
+      description: What concrete problem or decision would the material help you address?
+      placeholder: Describe the intended technical use and expected result.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: layers
+    attributes:
+      label: Required evidence layers
+      options:
+        - label: ADV or Android ScanRecord
+        - label: Original GATT exports
+        - label: ATT or HCI
+        - label: Protobuf or logical-message decoding
+        - label: Field observations
+        - label: TPMS or Keyfob material
+        - label: Provenance, manifests, and duplicate accounting
+        - label: Expected parser output or regression fixtures
+
+  - type: input
+    id: scale
+    attributes:
+      label: Useful number of cases
+      description: How many cases and what evidence depth would be useful?
+      placeholder: For example, 3 deep cases, 10-case pilot, or corpus-wide query.
+
+  - type: textarea
+    id: formats
+    attributes:
+      label: Required formats and outputs
+      description: Which original formats, derived formats, reports, or tool outputs must be preserved?
+
+  - type: dropdown
+    id: use
+    attributes:
+      label: Intended use
+      options:
+        - Internal research
+        - Parser or decoder development
+        - Regression or validation
+        - Automotive security research
+        - Digital forensics
+        - Technical intelligence
+        - Academic publication
+        - Other
+
+  - type: textarea
+    id: organization
+    attributes:
+      label: Organization or research context
+      description: Share only information you are comfortable posting publicly.
+
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Public issue acknowledgement
+      options:
+        - label: I have not included raw captures, target identifiers, tokens, locations, or other private evidence.
+          required: true
