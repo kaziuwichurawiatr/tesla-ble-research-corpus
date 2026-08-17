@@ -133,7 +133,7 @@ Please describe the use case, required evidence layers, preferred formats, and
 the result you would need from an evaluation.
 
 Private research and commercial inquiries:
-[teslable.research@gmail.com](mailto:teslable.research@gmail.com)
+[teslable.research@gmail.com](mailto:teslable.research@gmail.com?subject=Tesla%20BLE%20research%20inquiry)
 
 ## Documentation
 
