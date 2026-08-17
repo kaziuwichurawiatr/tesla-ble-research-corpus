@@ -8,6 +8,8 @@ Energy corpus, parser validation, and reproducible multi-layer analysis.
 > **Research inquiries are open.** Email
 > [teslable.research@gmail.com](mailto:teslable.research@gmail.com) or open a
 > [research-interest issue](../../issues/new?template=research-interest.yml).
+> You can also join the public
+> [use-case discussion](../../discussions/1).
 >
 > This public repository contains no raw corpus, vehicle list, capture archive,
 > or private laboratory path.
