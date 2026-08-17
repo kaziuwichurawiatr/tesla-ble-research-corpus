@@ -80,6 +80,19 @@ body:
       label: Organization or research context
       description: Share only information you are comfortable posting publicly.
 
+  - type: dropdown
+    id: discovery
+    attributes:
+      label: How did you find this project?
+      options:
+        - GitHub search or topic
+        - GitHub profile or repository link
+        - Automotive Security Research Group
+        - Car Hacking Village or another security community
+        - Reddit
+        - Direct email or personal referral
+        - Other
+
   - type: checkboxes
     id: acknowledgement
     attributes:
