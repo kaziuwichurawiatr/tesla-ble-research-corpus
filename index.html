@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tesla BLE Research Corpus | ADV, GATT, ATT/HCI and Protobuf</title>
+  <meta name="description" content="Independent, real-world Tesla BLE research corpus for protocol analysis, parser validation, ATT/HCI correlation and reproducible technical evaluation.">
+  <meta name="keywords" content="Tesla BLE, Bluetooth Low Energy, automotive security, GATT, ATT, HCI, protobuf, parser validation, protocol research">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://kaziuwichurawiatr.github.io/tesla-ble-research-corpus/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="site.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tesla BLE Research Corpus">
+  <meta property="og:description" content="2,048 field-observed Teslas. Multi-layer ADV, GATT, ATT/HCI and protobuf research. Technical inquiries are open.">
+  <meta property="og:url" content="https://kaziuwichurawiatr.github.io/tesla-ble-research-corpus/">
+  <meta property="og:image" content="https://kaziuwichurawiatr.github.io/tesla-ble-research-corpus/assets/tesla-ble-research-corpus-social.jpg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Tesla BLE Research Corpus: ADV, GATT, ATT-HCI and protobuf">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tesla BLE Research Corpus">
+  <meta name="twitter:description" content="Real-world, evidence-grade Tesla BLE protocol research and parser validation.">
+  <meta name="twitter:image" content="https://kaziuwichurawiatr.github.io/tesla-ble-research-corpus/assets/tesla-ble-research-corpus-social.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Tesla BLE Research Corpus",
+    "description": "A private real-world Tesla Bluetooth Low Energy research corpus organized for protocol analysis, parser validation, ATT/HCI correlation and reproducible technical evaluation.",
+    "url": "https://kaziuwichurawiatr.github.io/tesla-ble-research-corpus/",
+    "keywords": ["Tesla BLE", "Bluetooth Low Energy", "GATT", "ATT", "HCI", "protobuf", "automotive security", "parser validation"],
+    "conditionsOfAccess": "Technical evaluation by inquiry. No public raw corpus release.",
+    "measurementTechnique": ["BLE advertising observation", "GATT session capture", "ATT/HCI correlation", "protobuf wire analysis"]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Tesla BLE Research Corpus home">
+      <span class="brand-mark" aria-hidden="true">TB</span>
+      <span>Tesla BLE Research Corpus</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#scope">Scope</a>
+      <a href="#tracks">Evaluation tracks</a>
+      <a href="#evidence">Evidence model</a>
+      <a href="https://github.com/kaziuwichurawiatr/tesla-ble-research-corpus">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> Research inquiries are open</p>
+        <h1>Real-world Tesla BLE evidence for serious protocol research.</h1>
+        <p class="hero-lead">A private comparative library spanning advertising, GATT, ATT/HCI, protobuf wire data, field observations and reproducible evidence controls.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="mailto:teslable.research@gmail.com?subject=Tesla%20BLE%20research%20inquiry&amp;body=Organization%20or%20research%20area%3A%0A%0ATechnical%20problem%3A%0A%0AEssential%20evidence%20layers%3A%0A%0APreferred%20formats%20and%20outputs%3A%0A%0AUseful%20number%20of%20cases%3A%0A%0AIntended%20use%3A%0A">Send a research inquiry</a>
+          <a class="button secondary" href="https://github.com/kaziuwichurawiatr/tesla-ble-research-corpus/discussions/1">Describe your use case</a>
+        </div>
+        <p class="direct-email">Direct contact: <a href="mailto:teslable.research@gmail.com">teslable.research@gmail.com</a></p>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/tesla-ble-research-corpus-hero.png" width="1280" height="640" alt="Technical visualization of layered automotive BLE evidence">
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Current project scope">
+      <article><strong>2,048</strong><span>field-observed Teslas in the private library</span></article>
+      <article><strong>10 cases</strong><span>selected Deep Evidence Pilot in preparation</span></article>
+      <article><strong>9 + 1</strong><span>nine HCI-supported vehicle cases plus one rare Keyfob GATT case</span></article>
+      <article><strong>4 classes</strong><span>FACT, INFERENCE, HYPOTHESIS and UNKNOWN</span></article>
+    </section>
+
+    <section id="scope" class="section split">
+      <div>
+        <p class="section-label">What exists</p>
+        <h2>Heterogeneous evidence, documented honestly.</h2>
+      </div>
+      <div class="body-copy">
+        <p>The private library covers 2,048 field-observed Teslas. GATT cases were collected while the corresponding vehicle was being observed in the field.</p>
+        <p>Depth varies naturally. A case may contain one GATT session or dozens, ADV and Android ScanRecord material, complete HCI or source-bound slices, TPMS, field notes, longitudinal history, or explicit gaps. Missing layers are recorded as missing rather than silently replaced.</p>
+      </div>
+    </section>
+
+    <section class="layer-grid" aria-label="Evidence layers">
+      <article><span>01</span><h3>ADV and ScanRecord</h3><p>Advertising structures, payload families, repeated observations and cross-layer timing.</p></article>
+      <article><span>02</span><h3>GATT and ATT/HCI</h3><p>Services, characteristics, descriptors, CCCD state, opcodes, errors and connection timelines.</p></article>
+      <article><span>03</span><h3>0x0213 and protobuf</h3><p>Length-aware parsing, wire trees, repeated values and unknown-field ledgers without invented semantics.</p></article>
+      <article><span>04</span><h3>Provenance</h3><p>Original bytes, SHA-256 manifests, source maps, duplicate accounting, quarantine and explicit gaps.</p></article>
+    </section>
+
+    <section id="tracks" class="section tracks">
+      <p class="section-label">Market and research validation</p>
+      <h2>Which form would solve a real problem for you?</h2>
+      <div class="track-grid">
+        <article><h3>Deep Evidence Pilot</h3><p>Ten selected, technically diverse cases for close comparative review.</p></article>
+        <article><h3>Parser Validation Pack</h3><p>Selected evidence, fixtures, expected outputs, edge cases and negative cases.</p></article>
+        <article><h3>Anomaly Dossier</h3><p>One narrow observation with supporting evidence, counterexamples and unresolved questions.</p></article>
+        <article><h3>Private Corpus Query</h3><p>A precise question tested against the wider private library without transferring the full corpus.</p></article>
+        <article><h3>Custom Integration</h3><p>Internal tools or analysis adapted to a partner's formats, workflow and objective.</p></article>
+      </div>
+    </section>
+
+    <section id="evidence" class="section evidence-panel">
+      <div>
+        <p class="section-label">Evidence discipline</p>
+        <h2>No fluent story in place of proof.</h2>
+      </div>
+      <ul>
+        <li>Application, GATT, ATT/HCI, radio, field and emulation layers remain separate.</li>
+        <li>Unknown fields remain <code>UNKNOWN</code>.</li>
+        <li>Temporal proximity does not become physical causality.</li>
+        <li>A hash proves retained-artifact integrity, not source completeness or semantics.</li>
+        <li>Original evidence and derived analysis remain distinguishable.</li>
+      </ul>
+    </section>
+
+    <section class="keyfob-callout">
+      <div>
+        <p class="section-label">Rare case inside the pilot</p>
+        <h2>Tesla Keyfob GATT evidence</h2>
+        <p>The selected pilot includes a rare Tesla Keyfob case with repeated Android/nRF Connect connections, MTU negotiation, Tesla service discovery, readable device identity, documented bonding failure and timeout behavior. No matching HCI capture exists, and that gap is stated plainly.</p>
+      </div>
+      <span class="case-status">GATT PRESENT<br>HCI MISSING</span>
+    </section>
+
+    <section class="section faq">
+      <p class="section-label">Straight answers</p>
+      <details><summary>Is the raw corpus public?</summary><p>No. This site is an evidence and capability index. There is no public vehicle list or raw capture download.</p></details>
+      <details><summary>Can a qualified researcher receive original material?</summary><p>An agreed evidence package can be transferred through a controlled channel in its original byte-level form when full fidelity is required. Scope and permitted use are established for each engagement.</p></details>
+      <details><summary>Is every case identical?</summary><p>No. Technical depth varies from one session to longitudinal collections with HCI, ADV, TPMS or field observations. Coverage and gaps are reported case by case.</p></details>
+      <details><summary>Is the product format fixed?</summary><p>No. The current goal is to learn what researchers and tool builders genuinely need before fixing the commercial package.</p></details>
+    </section>
+
+    <section class="final-cta">
+      <p class="section-label">Tell us the problem, not just that it looks interesting.</p>
+      <h2>What evidence would make this useful in your workflow?</h2>
+      <p>Include your technical problem, required layers, preferred formats, useful case count and intended result.</p>
+      <div class="hero-actions centered">
+        <a class="button primary" href="mailto:teslable.research@gmail.com?subject=Tesla%20BLE%20research%20inquiry&amp;body=Organization%20or%20research%20area%3A%0A%0ATechnical%20problem%3A%0A%0AEssential%20evidence%20layers%3A%0A%0APreferred%20formats%20and%20outputs%3A%0A%0AUseful%20number%20of%20cases%3A%0A%0AIntended%20use%3A%0A">Email the project</a>
+        <a class="button secondary" href="https://github.com/kaziuwichurawiatr/tesla-ble-research-corpus">Inspect the public index</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Independent research project. Not affiliated with, sponsored by, or endorsed by Tesla, Inc.</p>
+    <p><a href="mailto:teslable.research@gmail.com">teslable.research@gmail.com</a> · <a href="https://github.com/kaziuwichurawiatr/tesla-ble-research-corpus">GitHub</a></p>
+  </footer>
+</body>
+</html>

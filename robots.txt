@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kaziuwichurawiatr.github.io/tesla-ble-research-corpus/sitemap.xml

@@ -11,6 +11,9 @@ Energy corpus, parser validation, and reproducible multi-layer analysis.
 > You can also join the public
 > [use-case discussion](../../discussions/1).
 >
+> **Project landing page:**
+> [kaziuwichurawiatr.github.io/tesla-ble-research-corpus](https://kaziuwichurawiatr.github.io/tesla-ble-research-corpus/)
+>
 > This public repository contains no raw corpus, vehicle list, capture archive,
 > or private laboratory path.
 
